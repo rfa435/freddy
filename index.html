@@ -14,14 +14,15 @@
     font-family: "Trebuchet MS",Helvetica,sans-serif;
     justify-content: flex-end;
     box-shadow: 0px 7px 15px #E0E0E0;
-    overflow: hidden;
 }
 .logo{
     margin-right:auto;
+	align-self: center;
 }
 .button {
     background-color: #FEFDFF;
-    padding : 30px;
+    padding : 2rem;
+	text-align: center;
     
 }
 .button a {
@@ -34,13 +35,11 @@
 }
 .dropdown {
     float: left;
-    overflow: hidden;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #FEFDFF;
-    min-width: 117px;
     z-index: 1;
 }
 .dropdown .dropbtn {
@@ -48,7 +47,7 @@
     border: none;
     outline: none;
     color: #262626;
-    padding: 30px;
+    padding: 2rem;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -70,7 +69,9 @@
 .article{
     display: flex;
     background-color: #ffff80;
+	padding: 40px;
     flex-flow: row;
+	flex-wrap:wrap;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -78,8 +79,10 @@
 }
 .konten {
     display: flex;
-    flex-flow: row;
+    flex-direction:row;
+	flex-wrap:wrap;
     justify-content: center;
+
 }
 .konten > div {
     display: flex;
@@ -126,10 +129,19 @@
     text-align:center;
     font-size: 17px;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .article {
+  padding-top: 75px;
+}
 </style>
 </head>
 <body>
-    <div class="nav">
+    <div class="nav" id="navbar">
         <img class="logo"src="https://i.ibb.co/DDxR1ZC/fred.png" alt="FREDDY">
         <div class="button"><a href ="#Home"><b> Home</b> </a></div>
         <div class="button"><a href ="#AboutUs"> <b>About us</b> </a></div>
@@ -142,7 +154,7 @@
         </div>
     </div>
     <div class='article'>
-        <img src="https://i.ibb.co/nzGY5G2/food.gif" width="500" height="500" style="margin-top: 50px;margin-bottom: 50px;" >
+        <img src="https://i.ibb.co/nzGY5G2/food.gif" style="width:100%;max-width: 500px;max-height:500px;margin-top: 50px;margin-bottom: 50px;" >
         <div>
             <h1 style="margin-left: 50px; font-size: 40px; color:#00cc66">sudah yakin makanan kamu<br>aman untuk dimakan?</h1>
             <p style="margin-left: 50px; margin-top: 15px;margin-bottom: 40px;color:#262626"><b>FREDDY atau Freshness Detector hadir untuk mengecek tingkat kesegaran<br> bahan pangan kamu sesuai dengan SNI dan juga mengecek keamanan<br> bahan pangan kamu dari kecurangan pasar.</b></p>
@@ -186,5 +198,21 @@
     <div class="bottom">
         <p>FREDDY (Freshness Detector) <br> by Kelompok 30 Milestones SPARTA 2020</p>
     </div>
+	
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 </body>
 </html>
