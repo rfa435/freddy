@@ -6,7 +6,7 @@
 <title>Freddy - Cek Sayur</title>
 </head>
 
-<body>
+<body style="background-color:#ffff80;">
     <div class="nav" id="navbar">
         <img class="logo"src="https://i.ibb.co/DDxR1ZC/fred.png" alt="FREDDY">
         <div class="button"><a href ="#Home"><b> Home</b> </a></div>
@@ -20,7 +20,24 @@
         </div>
     </div>
     <div class="soalcek">
-	Tulisan
+	    <form>
+	    	<p>1. Apakah sayuran Anda berbau amis?</p>
+                <input type="radio" id="ya" name="amis" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="amis" value="tidak">
+                <label for="female">Tidak</label><br>
+		    <p>2. Apakah sayuran Anda berlendir?</p>
+			    <input type="radio" id="ya" name="lendir" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="lendir" value="tidak">
+                <label for="female">Tidak</label><br>
+	        <p>3. Apakah warna sayuran Anda lebih gelap dari biasanya?</p>
+			    <input type="radio" id="ya" name="gelap" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="gelap" value="tidak">
+                <label for="female">Tidak</label><br>
+			<input type="submit" value="Submit">
+        </form> 
 	</div>
 <script>
 window.onscroll = function() {myFunction()};

@@ -136,14 +136,18 @@
 }
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
 }
 
 .sticky + .article {
-  padding-top: 75px;
+    padding-top: 75px;
+}
+
+.sticky + .soalcek {
+    padding-top: 120px;
 }
 
 @keyframes linkani{
@@ -152,7 +156,5 @@
 }
 
 .soalcek{
-	background-color: #ffff80;
-	height: 100%;
 	padding:1rem;
 }
