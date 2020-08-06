@@ -1,0 +1,136 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* styling navigation bar START */
+.nav {
+    display: flex;
+    background-color: #FEFDFF;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.logo{
+    margin-right:auto;
+}
+.button {
+    background-color: #FEFDFF;
+    padding : 30px;
+    
+}
+.button a {
+    color: #262626;
+    text-decoration: none;
+}
+
+.button a:hover {
+    color: #00cc66;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FEFDFF;
+    min-width: 117px;
+    z-index: 1;
+}
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #262626;
+    padding: 30px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content a {
+    float: none;
+    color: #262626;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    color:#00cc66
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* styling navigation bar END*/
+
+/* styling konten START*/
+
+.isi{
+    display:flex;
+    background-color: #ffff80;
+    height:80%
+}
+.isi p{
+    padding : 50px;
+    font-family: 'Helvetica', arial,sans-serif;
+    font-size : 50px;
+}
+/* styling konten END*/
+
+/*styling footer START */
+.footer{
+    display: flex;
+    background-color:#ff3333 ;
+    position: absolute;
+    justify-content: center;
+    width:100%;
+    bottom: 0;
+}
+.footer p{
+    padding : 50px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: #FEFDFF;
+    text-align:center;
+    font-size: 17px;
+}
+/*styling footer END*/
+</style>
+</head>
+
+<body>
+<!--ini navigation bar-->
+    <div class="nav">
+        <img class="logo"src="https://i.ibb.co/DDxR1ZC/fred.png" alt="FREDDY">
+        <div class="button"><a href ="#Home"><b> Home</b> </a></div>
+        <div class="button"><a href ="#About"> <b>About</b> </a></div>
+        <div class="dropdown">
+            <div class="dropbtn"><a><b> Services </b> </a></div>
+            <div class="dropdown-content">
+                <a href="#Uji kesegaran">Uji kesegaran</a>
+                <a href="#Uji keamanan">Uji keamanan</a>
+            </div>
+        </div>
+    </div>
+<!--batas navigation bar-->
+
+<!--isi konten disini-->
+    <div class="isi">
+        <p>isi konten disini</p>
+    </div>
+<!--akhir isi konten-->
+
+<!--ini footer-->
+    <div class="footer">
+        <p>FREDDY (Freshness Detector) <br> by Kelompok 30 Milestones SPARTA 2020</p>
+    </div>
+<!--akhir footer-->
+</body>
+
+</html>
