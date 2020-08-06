@@ -28,7 +28,9 @@
 }
 
 .button a:hover {
-    color: #00cc66;
+    animation-name: linkani;
+    animation-duration: 0.25s;
+	animation-fill-mode: forwards;
 }
 .dropdown {
     float: left;
@@ -58,7 +60,9 @@
     text-align: left;
 }
 .dropdown-content a:hover{
-    color:#00cc66
+    animation-name: linkani;
+    animation-duration: 0.25s;
+	animation-fill-mode: forwards;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -111,6 +115,11 @@
     padding : 15px;
     border-radius:25px
 }
+
+.cek:hover{
+	background-color:#cc1d1d;
+}
+
 .bottom{
     display: flex;
     background-color:#ff3333 ;
@@ -130,6 +139,12 @@
   top: 0;
   width: 100%;
 }
+
 .sticky + .article {
   padding-top: 75px;
+}
+
+@keyframes linkani{
+	from {color: #262626;}
+	to {color: #00cc66;}
 }
