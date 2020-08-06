@@ -11,6 +11,7 @@
     font-family: "Roboto","Trebuchet MS",Helvetica,sans-serif;
     justify-content: flex-end;
     box-shadow: 0px 7px 15px #E0E0E0;
+	position: relative;
 }
 .logo{
     margin-right:auto;
@@ -138,6 +139,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+
 }
 
 .sticky + .article {
@@ -147,4 +149,10 @@
 @keyframes linkani{
 	from {color: #262626;}
 	to {color: #00cc66;}
+}
+
+.soalcek{
+	background-color: #ffff80;
+	height: 100%;
+	padding:1rem;
 }

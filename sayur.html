@@ -1,0 +1,41 @@
+<DOCTYPE! html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Freddy - Cek Sayur</title>
+</head>
+
+<body>
+    <div class="nav" id="navbar">
+        <img class="logo"src="https://i.ibb.co/DDxR1ZC/fred.png" alt="FREDDY">
+        <div class="button"><a href ="#Home"><b> Home</b> </a></div>
+        <div class="button"><a href ="#AboutUs"> <b>About us</b> </a></div>
+        <div class="dropdown">
+            <div class="dropbtn"><a><b> Services </b> </a></div>
+            <div class="dropdown-content">
+                <a href="#Uji kesegaran">Uji kesegaran</a>
+                <a href="#Uji keamanan">Uji keamanan</a>
+            </div>
+        </div>
+    </div>
+    <div class="soalcek">
+	Tulisan
+	</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
