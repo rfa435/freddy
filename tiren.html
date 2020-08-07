@@ -1,0 +1,90 @@
+<DOCTYPE! html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Freddy - Cek Sayur</title>
+</head>
+
+<body style="background-color:#ffff80;">
+    <div class="nav" id="navbar">
+        <img class="logo"src="https://i.ibb.co/DDxR1ZC/fred.png" alt="FREDDY">
+        <div class="button"><a href ="#Home"><b> Home</b> </a></div>
+        <div class="button"><a href ="#AboutUs"> <b>About us</b> </a></div>
+        <div class="dropdown">
+            <div class="dropbtn"><a><b> Services </b> </a></div>
+            <div class="dropdown-content">
+                <a href="#Uji kesegaran">Uji kesegaran</a>
+                <a href="#Uji keamanan">Uji keamanan</a>
+            </div>
+        </div>
+    </div>
+    <div class="soalcek">
+	    <form>
+	    	<p>1. Apakah warna daging terlihat kuning? </p>
+                <input type="radio" id="ya" name="daging-kuning" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="daging-kuning" value="tidak">
+                <label for="female">Tidak</label><br>
+                <br>
+		    <p>2. Apakah darah berwarna gelap?</p>
+			    <input type="radio" id="ya" name="darah-gelap" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="darah-gelap" value="tidak">
+                <label for="female">Tidak</label><br>
+                <br>
+	        <p>3. Adakah bercak warna merah pada kulit daging?</p>
+			    <input type="radio" id="ya" name="bercak" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="bercak" value="tidak">
+                <label for="female">Tidak</label><br>
+                <br>
+            <p>4. Apakah Anda melihat warna kebiru-biruan pada ayam Anda?</p>
+			    <input type="radio" id="ya" name="biru" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="biru" value="tidak">
+                <label for="female">Tidak</label><br>
+                <br>
+            <p>5. Apakah tekstur daging anda lembek?</p>
+			    <input type="radio" id="ya" name="lembek" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="lembek" value="tidak">
+                <label for="female">Tidak</label><br>
+                <br>
+            <p>6. Apakah organ dalam berwarna gelap?</p>
+			    <input type="radio" id="ya" name="organ-gelap" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="organ-gelap" value="tidak">
+                <label for="female">Tidak</label><br>
+                <br>
+            <p>7. Apakah dagingnya berbau amis?</p>
+			    <input type="radio" id="ya" name="amis" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="amis" value="tidak">
+                <label for="female">Tidak</label><br>
+                <br>
+            <p>9. Apakah urat nadi di leher ayam Anda terputus?</p>
+			    <input type="radio" id="ya" name="putus" value="ya">
+                <label for="male">Ya</label><br>
+                <input type="radio" id="tidak" name="putus" value="tidak">
+                <label for="female">Tidak</label><br>
+                <br>
+			<input type="submit" value="Submit">
+        </form> 
+	</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
