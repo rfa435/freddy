@@ -171,3 +171,12 @@
 	  padding-top:2rem;
   }
 }
+
+.isi{
+    display:flex;
+    height:80%
+}
+.isi p{
+    padding : 50px;
+    font-family: 'Helvetica', arial,sans-serif;
+    font-size : 50px;
