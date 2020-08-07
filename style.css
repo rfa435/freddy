@@ -151,7 +151,6 @@
     padding-top: 78px;
 }
 
-
 .sticky + .container {
     padding-top: 85px;
 }
@@ -279,7 +278,8 @@ input[type="submit"]:hover {
 
 .isi{
     display:flex;
-    height:80%
+	min-height:80%;
+	height:80%;
 }
 .isi p{
     padding : 50px;
