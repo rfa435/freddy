@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -112,9 +113,9 @@
     background-color:#ff3333;
     color:#FEFDFF;
     font-weight: bold;
-    text-decoration: none ;
+    text-decoration: none;
     padding : 15px;
-    border-radius:25px
+    border-radius:25px;
 }
 
 .cek:hover{
@@ -146,8 +147,8 @@
     padding-top: 75px;
 }
 
-.sticky + .soalcek {
-    padding-top: 120px;
+.sticky + .container {
+    padding-top: 85px;
 }
 
 @keyframes linkani{
@@ -156,7 +157,106 @@
 }
 
 .soalcek{
-	padding:1rem;
+	margin-top:50px;
+    width:75%;
+	padding:2rem;
+	background-color: rgba(255,255,255,0.5);
+	border: 2px solid #ffdd80;
+	border-radius: 12px;
+}
+
+.formsoal{
+	font-family: 'Chilanka', cursive;
+	font-size:1.5rem;
+	padding-top:1.5rem;
+}
+
+.submitsoal{
+	justify-content:center;
+	display:flex;
+	padding-top:1.5rem;
+}
+.formjawab{
+	font-family: 'Chilanka', cursive;
+	font-size:1.2rem;
+	padding:0.5rem;
+}
+
+input[type="submit"] {
+	background-color:#ff3333;
+    width: 200px;
+    height: 50px;
+	border:0px;
+    color:#FEFDFF;
+    font-weight: bold;
+    border-radius:25px;
+	font-size:1.3rem;
+}
+
+input[type="submit"]:hover {
+	background-color:#cc1d1d;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #ff5454;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	padding-bottom:50px;
 }
 
 @media screen and (max-width: 600px) {
