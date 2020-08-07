@@ -144,8 +144,13 @@
 }
 
 .sticky + .article {
-    padding-top: 75px;
+    padding-top: 78px;
 }
+
+.sticky + .isi {
+    padding-top: 78px;
+}
+
 
 .sticky + .container {
     padding-top: 85px;
